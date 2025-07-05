@@ -1,0 +1,100 @@
+body{
+    margin: 0;
+    font-family: "Segoe UI",sans-serif;
+    background: #f0f0f5;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav-left{
+    font-size: 1.5rem;
+    color: #6a1b9a;
+    font-weight: bold;
+}
+
+.search-box input{
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+
+}
+
+.new-blog{ 
+background:#6a1b9a;
+color: white;
+padding: 8px 16px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+.user-avatar{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-left: 10px;
+
+}
+.hero{ 
+    background-color: #6a1b9a;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.hero p{
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+.hero-buttons button{
+    margin: 0 10px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+.write-btn{
+    background: white;
+    color: #6a1b9a;
+
+}
+.book-btn{
+    background: #ffca28;
+    color: #333;
+
+}
+.featured{
+    padding: 20px;
+    background: white;
+    margin: 20px;
+    border-radius: 8px;
+
+}
+
+footer nav{
+    display: flex;
+    justify-content: space-around;
+    background: #fff;
+    padding: 10px 0;
+    border-top: 1px solid 
+    #ccc;
+
+}
+
+footer nav a {
+    text-decoration: none;
+    color: #6a1b9a;
+    font-weight: 500;
+    
+}

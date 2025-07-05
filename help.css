@@ -1,0 +1,104 @@
+body{
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: #f4f6fc;
+}
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 12px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+}
+
+.logo{
+    color: #5a5af0;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.main-header input{
+    flex: 1;
+    margin: 0 20px;
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.new-blog{
+    background: #5a5af0;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+
+}
+
+.emergency-banner{
+    background: #e53935;
+    color: white;
+    text-align: center;
+    padding: 16px;
+}
+
+.emergency-banner button{
+    margin-top: 8px;
+    background: white;
+    color: #e53935;
+    border: none;
+    padding: 8PX 16px;
+    border-radius: 6px;
+    font-weight: 6px;
+    cursor: pointer;
+
+}
+
+.support-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,maximum(230px,1fr));
+    gap: 16px;
+    padding: 20px;
+}
+
+.support-card{
+    border-radius: 10px;
+    padding: 16px;
+    color: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.crisis {background: #1565c0;}
+.youth {background: #6a1b9a;}
+.substance {background: #2e7d32;}
+.igbtq {background: #d81b60;}
+
+.support-card h2{
+    margin: 0 0 10px;
+
+}
+
+.support-card span {
+    display: inline-block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+
+footer nav{
+    display: flex;
+    justify-content: space-around;
+    background: #fff;
+    padding: 10px 0;
+    border-top: 1px solid 
+    #ccc;
+
+}
+
+footer nav a {
+    text-decoration: none;
+    color: #6a1b9a;
+    font-weight: 500;
+    
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <title>Mindfultalk-Book an Appointment</title>
+<link rel="stylesheet" href="appointment.css">
+    </head>
+        <body>
+            <header class="app - header">
+               <div class="logo">MindfulTalk</div>
+            <input type="text"placeholder="Search..."/>
+            <button class="new blog">+ New Blog</button>
+            </header>
+            <main>
+                <h1>Book an Appointment</h1>
+                 
+                <div class="booking-layout">
+                    <div class="calendar-box">
+                        <label for="-appointmentDate">📅Select Date:</label>
+                        <input type="date"id="-appointmentDate"/>
+                    </div>
+                </div>
+                <div class="therapist-list">
+                    <div class="therapist">
+                        <img src="rebecca.jpg"alt="Dr.Rebecca Martinez"/>
+                        <div>
+                            <h2>Dr.Rebecca Martinez,Ph.D</h2>
+                            <p>Clinical Psychologist-Anxiety,Depression,Trauma</p>
+                            <p><strong>$150/hour</strong></p>
+                            <button onclick="bookWithGoogle('Dr Rebecca Martinez')">BookNow</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="therapist">
+                    <img src="jonathan.jpg" alt="Dr.Jonathan Lee"/>
+                    <div>
+                        <h2>Dr.Jonathan Lee,Psy.D</h2>
+                        <p>Cognitive Behavioral Therapist-OCD,Phobias,Stress</p>
+                        <p><strong>$165/hour</strong></p>
+                        <button onclick="bookWithGoogle('Dr Jonathan Lee')">BookNow</button>
+                    </div>
+                </div>
+             </main>
+             <footer>
+                <nav>
+                    <a href="./index.html">Home</a> 
+                    <a href="./blogs.html"> Blogs</a>
+                    <a href="./facilities.html"> Facilities</a>
+                    <a href="./appointments.html"> Appointment</a>
+                    <a href="./help.html"> Help</a>
+                </nav>
+             </footer>
+
+             <script src="script.js"></script>
+        </body>
+</html>
