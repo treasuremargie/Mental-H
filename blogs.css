@@ -40,7 +40,7 @@ body{
 }
 
 .community {
-    padding: 30px;
+    padding: 30px 20px;
     background: white;
     margin: 20px;
     border-radius: 8px;
@@ -112,14 +112,13 @@ footer nav{
     justify-content: space-around;
     background: #fff;
     padding: 10px 0;
-    border-top: 1px solid 
-    #ccc;
-
+    border-top: 1px solid #ddd;
+ padding: 10px;  
 }
 
 footer nav a {
     text-decoration: none;
     color: #6a1b9a;
-    font-weight: 500;
+    font-weight: bold;
     
 }
