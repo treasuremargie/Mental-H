@@ -2,57 +2,199 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width,intial-scale=1.0"/>
-    <title>Mindfultalk</title>  
- <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <title>MindfulTalk</title>
+        <link rel="stylesheet"href="style.css"/>
     </head>
-
     <body>
-        <section class="margie"> 
-            <header>
-            <div class="nav-left">Mindfultalk</div>  
+        <header>
+            <div class="nav-left">MindfulTalk</div>
             <div class="search-box">
-                <input type="text"placeholder="Search blogs,psychologists..."/>
+                <input type="text"placeholder="Search blogs,psychologosts..."/>
             </div>
-            <button class="new-blog">+ New Blog</button> 
-            <img scr="user-icon.png"class="user-avatar" alt="User" />
-            </header>
-        </section>
+            <button class="new-blog">+New Blog</button>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSolRrd6K1-H5APf7ckP--6DSvijDrBR3TIVg&s" 
+            class="user-avatar" alt="User"/>
+        </header>
         <main>
-
-
-
-        <section class="hero">
-            <div>
+            <section class="hero">
                 <h1>Find Peace in Sharing Your Journey</h1>
-                <p>Connect with professinal psychologists and a suppotive community to navigate life's challenges together</p>
-            <div class="hero-buttons">
+                <p>Connect with professional psychologists and a suppotive community to navigate life's challenges together.</p>
+                <div class="hero-buttons">
                     <button class="write-btn">Write Your Story</button>
-<button class="book-btn">Book a Session</button>
+                    <button class="appointment" class="book-btn">Book a Session</button>
+                </div>
+            </section>
+            <section id="featured" class="featured">
+                <section class="community">
+                    <h2>Community Stories</h2>
+                    <div class="categories">
+                <button class="category active">All</button>
+                <button class="category">Anxiety</button>
+                <button class="category">Depression</button>
+                <button class="category">Mindfulness</button>
+                <button class="cartegory">Self-care</button>
+                <button class="cartegory">Relationships</button>
+                <button class="category">Trauma</button>
+                <button class="category">Growth</button>
+                    </div>
+                    <div class="posts">
+                        <article>
+                            <img src="data:image/jpeg;base64,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" alt="Mindfulness story" />
+          <div class="info">
+            <p><strong>Dr. Sarah Johnson</strong> • June 25, 2025</p>
+            <h3>Finding Peace Through Mindfulness Meditation</h3>
+          </div>
+        </article>
+                        </article>
+                        <article>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6vam0zJe-eVs4gFW33M6y5xExZi3m1ut-YA&s" 
+                            alt="Negative thoughts story"/>
+                            <div class="info">
+                                <p><strong>Michael Chen</strong>.June 22,2025</p>
+                                <h3>Breaking the Cycle of Negative Thoughts</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="data:image/jpeg;base64,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" alt="Vulnerability story" />
+          <div class="info">
+            <p><strong>Emma Rodriguez</strong> • June 18, 2025</p>
+            <h3>Toxic Relationships</h3>
+          </div>
+        </article>
+               <div class="posts" id="posts">
+                <!--stories go here -->
+               </div>
+                        </article>
+                    </div>
+                </section>
+            </section>
+            <div class="story-form">
+                <h1>Write Your Story</h1>
+                <input id="nameInput" type="text" placeholder="Your name">
+                <input id="titleInput" type="text" placeholder="Story title">
+                <textarea id="storyInput" rows="4" placeholder="Write your story..."></textarea>
+                <input id="imageinput" type="text" placeholder="image URL (optional)">
+                <br>
+                <button onclick="addStory()">Post Story</button>
             </div>
+            <h1 id="book">Book an Appointment</h1>
+            <div class="booking-layout">
+                <div class="calender-box">
+                    <label for="appointmentDate">📅Select Date:</label>
+                    <input type="date" id="appointmentDate"/>
+                </div>
+                <div class="therapist-list">
+                    <div class="therapist">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUR7Xl9W0nUD4rG3PWhYAxEzL8h1p6wN8lUA&s"
+                        alt="Dr.Rebecca Martinez"/>
+                        <div>
+                            <h2>Dr Rebecca Martinez,PH.D</h2>
+                            <p>Clinical Psychologist- Anxiety,Depression,Trauma</p>
+                            <p><strong>$150/hour</strong></p>
+                            <button class="book-btn" onclick="bookWithGoogle('Dr Rebecca Martinez')">Book Now</button>
+                        </div>
+                    </div>
+                    <div class="therapist">
+                        <img src="https://media.istockphoto.com/id/1410538853/photo/young-man-in-the-public-park.jpg?s=612x612&w=0&k=20&c=EtRJGnNOFPJ2HniBSLWKzsL9Xf7GHinHd5y2Tx3da0E=" alt="Dr. Jonathan Lee" />
+                    </div>
+                    <h2>Dr.Jonathan Lee,Psy.D</h2>
+                    <p>Cognitive Behavioral Therapist - OCD,Phobias,Stress</p>
+                    <p><strong>$165/hour</strong></p>
+                    <button class="book-btn" onclick="bookWithGoogle('Dr.Jonathan Lee')">Book Now</button>
+                </div>
             </div>
-        </section>
-
-        <section class="featured">
-            <div>
-<h2>Featured Stories <a href="http://">View All</a></h2>
+            <br>
+            <br>
+            <h1 id="mental">Mental Health Facilities</h1>
+            <div class="facility-controls">
+           <input type="text" placeholder="Search by location or facility name"/>
+           <button>Filter</button>
+           <button>Sort</button>
             </div>
-        </section>
+            <div class="view-toggle">
+                <button id="mapView" class="active">🗺Map View</button>
+                <button id="listView">📋List View</button>
+            </div>
+            <div id="map-placeholder">
+                <!--Placeholder for map-->
+                <div class="map-container">
+                   <div style="overflow:hidden;max-width:100%;width:1300px;height:400px;"><div id="google-maps-canvas" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=nirobi&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="embedded-map-code" href="https://www.bootstrapskins.com/themes" id="grab-map-info">premium bootstrap themes</a><style>#google-maps-canvas img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}</style></div>
+</div>
+ 
+                </div>
+            </div>
+            <div class="help">
+                <h2>🆘 How We Can Help</h2>
+                <p>We care about your well-being.Here are ways we can support you:</p>
+                <ul>
+                    <li>💬 Confidential listening from peer mentors</li>
+                    <li>📚 Mental health education and resources</li>
+                    <li>📍Referrals to nearby clinics or professionals</li>
+                    <li>📅 Help scheduling an appointment</li>
+          <li>🤝Community support and shared stories</li>
+                </ul>
+            </div>
+            <a href="https://www.safaricom.co.ke/m-pesa" target="_blank" class="donate-button" style="background: #1b8c1b;">📲 Donate via MPESA"</a>
+            <div class="support-grid">
+             <div class="support-card crisis">
+                <h2>Crisis Support</h2>
+                <p>Help for emotional distress and suicidal thoughts</p>
+                <span>6 Helplines</span>
+             </div>
+            </div>
+            <div class="support-card youth">
+                <h2>Youth Support</h2>
+                <p>Support for children and teenagers</p>
+                <span>4 Helplines</span>
+            </div>
+            <div class="support-card substances">
+                <h2>Substnce Abuse</h2>
+                <p>Help for addiction and recovery</p>
+                <span>5 Helplines</span>
+            </div>
+            <div class="support-card lgbtq">
+                <h2>Rape Support </h2>
+                <p>Resources for Rape individuals</p>
+                <span>3 Helplines</span>
+            </div>
         </main>
-    
-<footer>
-    <div>
-    <nav>
-    <a href="./index.html">🏠 Home</a>
-    <a href="./blogs.html">📝Blog</a>
-    <a href="./facilities.html">🏢 Facilities</a>
-    <a href="./appointments.html">📅 Appointments</a>
-    <a href="./help.html"> ❓ Help</a>
-    </nav>
-     
-            </div>
-</footer>
-     
+        <footer>
+            <nav>
+                <a href="#">🏠 Home</a>
+      <a href="#featured">📝 Blogs</a>
+      <a href="#mental">🏢 Facilities</a>
+      <a href="#book">📅 Appointments</a>
+      <a href="#help">❓ Help</a>
 
-    </body>  
+            </nav>
+        </footer>
+        <script src="script.js"></script>
+        <script>
+            function addStory(){
+                const name=document.getElementById("nameInput").value.trim();
+                const title=document.getElementById("titleInput").value.trim();
+                const story=document.getElementById("storyInput").value.trim();
+                const imageUrl=documetnt.getElementById("imageInput").value.trim();
+                if(!name||!title||!story){
+                    alert("Fill in everything pls 😅");
+                }
+                const article=document.createElement("article");
+                const imgSrc=imageUrl||"https://via.placeholder.com/300x160.png?text=User+Story";
+                article.innerHTML=`
+                <img src="${imgSrc}"alt="User story image"/>
+                <div class="info">
+                <p><strong>${name}</strong>.Just Now</p>
+                <h3>${title}</h3>
+                <p>${story}</p>
+                </div>`;
+                document.getElementById("posts").prepend(article);
+                document.getElementById("nameInput").value="";
+                document.getElementById("titleInput").value="";
+                document.getElementById("storyInput").value="";
+                documetnt.getElementById("imageInput").value="";
+
+            }
+        </script>
+    </body>
 </html>
