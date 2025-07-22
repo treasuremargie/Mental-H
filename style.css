@@ -1,100 +1,353 @@
-body{
+body {
     margin: 0;
-    font-family: "Segoe UI",sans-serif;
+    font-family: "Segoe UI", sans-serif;
     background: #f0f0f5;
-}
-header{
+  }
+  
+  header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     background: #fff;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.nav-left{
+  }
+  
+  .nav-left {
     font-size: 1.5rem;
     color: #6a1b9a;
     font-weight: bold;
-}
-
-.search-box input{
+  }
+  
+  .search-box input {
     padding: 6px;
     border-radius: 4px;
     border: 1px solid #ccc;
-
-}
-
-.new-blog{ 
-background:#6a1b9a;
-color: white;
-padding: 8px 16px;
-border: none;
-border-radius: 5px;
-cursor: pointer;
-}
-.user-avatar{
+  }
+  
+  .new-blog {
+    background: #6a1b9a;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .user-avatar {
     width: 32px;
     height: 32px;
     border-radius: 50%;
     margin-left: 10px;
-
+  }
+  .hero {
+  background: url('https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
-.hero{ 
-    background-color: #6a1b9a;
-    color: white;
-    text-align: center;
-    padding: 60px 20px;
+.hero::after {
+  content: '';
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
 }
-
-.hero h1{
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+.hero-content {
+  position: relative;
+  color: white;
+  text-align: center;
+  z-index: 1;
+  animation: fadeIn 2s ease;
 }
-.hero p{
-    font-size: 1.2rem;
-    margin-bottom: 30px;
+.hero h1 {
+  font-size: 3rem;
 }
-.hero-buttons button{
-    margin: 0 10px;
-    padding: 10px 20px;
-    border-radius: 25px;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-
+.hero span {
+  color: #81e6d9;
 }
-.write-btn{
+  .write-btn {
     background: white;
     color: #6a1b9a;
-
-}
-.book-btn{
+  }
+ .book-btn {
     background: #ffca28;
     color: #333;
-
-}
-.featured{
+  }
+  
+  .featured {
     padding: 20px;
     background: white;
     margin: 20px;
     border-radius: 8px;
-
-}
-
-footer nav{
+  }
+  
+  footer nav {
     display: flex;
     justify-content: space-around;
     background: #fff;
     padding: 10px 0;
-    border-top: 1px solid 
-    #ccc;
-
-}
-
-footer nav a {
+    border-top: 1px solid #ccc;
+  }
+  
+  footer nav a {
     text-decoration: none;
     color: #6a1b9a;
     font-weight: 500;
-    
-}
+  }
+.community {
+    padding: 30px 20px;
+    background: white;
+    margin: 20px;
+    border-radius: 8px;
+  }
+  
+  .categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 15px 0;
+  }
+  
+  .category {
+    border: none;
+    padding: 6px 12px;
+    border-radius: 16px;
+    background: #e0e0e0;
+    cursor: pointer;
+  }
+  
+  .category.active,
+  .category:hover {
+    background: #6a1b9a;
+    color: white;
+  }
+.posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+  }
+  
+  article {
+    background: #fafafa;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  article img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+  }
+  
+  .info {
+    padding: 15px;
+  }
+  
+  .info p {
+    color: #777;
+    margin: 0 0 5px;
+  }
+ .info h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  
+  .facility-controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .facility-controls input {
+    flex: 1;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .facility-controls button {
+    background: #eee;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+ .view-toggle {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .view-toggle button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+  }
+  
+  .view-toggle .active {
+    background-color: #5a5af0;
+    color: white;
+  }
+  
+  #map-placeholder {
+    width: 100%;
+    height: 400px;
+    background: #d6d6f5;
+    border-radius: 10px;
+    display: flex;
+  align-items: center;
+    justify-content: center;
+    color: #444;
+    font-weight: bold;
+  }
+  
+  .booking-layout {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .calendar-box {
+    flex: 1;
+    min-width: 250px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .therapist-list {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+ .therapist {
+    display: flex;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    overflow: hidden;
+  }
+  
+  .therapist img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+  }
+  
+  .therapist div {
+    padding: 10px 20px;
+  }
+  .emergency-banner {
+    background: #e53935;
+    color: white;
+    text-align: center;
+    padding: 16px;
+  }
+  
+  .emergency-banner button {
+    margin-top: 8px;
+    background: white;
+    color: #e53935;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .support-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 16px;
+    padding: 20px;
+  }
+ .support-card {
+    border-radius: 10px;
+    padding: 16px;
+    color: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  }
+  
+  .crisis    { background: #1565c0; }
+  .youth     { background: #6a1b9a; }
+  .substance { background: #2e7d32; }
+  .lgbtq     { background: #d81b60; }
+  
+  .support-card h2 {
+    margin: 0 0 10px;
+  }
+  
+  .support-card span {
+    display: inline-block;
+    margin-top: 12px;
+    font-weight: bold;
+  }
+  h1 {
+    text-align: center;
+  }
+  .story-form {
+    background: white;
+  padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto 30px;
+  }
+  .story-form input, .story-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  .story-form button {
+    padding: 10px 20px;
+    background: purple;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+ .help {
+    padding: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  .help h2 {
+    color: #6a1b9a;
+    margin-bottom: 10px;
+  }
+  .help ul {
+    padding-left: 20px;
+  }
+  .help li {
+    margin: 10px 0;
+  }
+  .donate-button {
+    display: inline-block;
+    background: #28a745;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 6px;
+    text-decoration: none;
+ font-weight: bold;
+  }
+
+
