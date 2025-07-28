@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,26 +8,32 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
 <nav class="navbar">
-<div class="logo">MindfulTalk</div>
-<ul class="nav-links">
-<li><a href="#home">Home</a></li>
-<li><a href="#blogs">Blogs</a></li>
-<li><a href="#facilities">Facilities</a></li>
-<li><a href="#appointment">Appointment</a></li>
-<li><a href="#help">Help</a></li>
-</ul>
+  <div class="logo">🧠 MindfulTalk</div>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+  
+    <li><a href="#community">Stories</a></li>
+    <li><a href="#book">Appointments</a></li>
+    <li><a href="#mental">Facilities</a></li>
+    <li><a href="#help">Help</a></li>
+  </ul>
+  <div class="burger">&#9776;</div>
 </nav>
-</header>
+
 <section id="home" class="hero">
 <div class="hero-content">
 <h1>Welcome to MindfulTalk</h1>
 <p>Your journey to mental wellness starts here.</p>
 </div>
 </section>
-<section class="community">
-<h2>Community Stories</h2>
+<section id="community" class="community">
+<h1 style="
+  font-size: 2rem;
+  color:#2e7d32;;
+  margin-bottom: 20px;
+  text-align: center;
+">Community Stories</h1>
 <div class="categories">
 <button class="category active">All</button>
 <button class="category">Anxiety</button>
@@ -53,7 +60,7 @@
 </div>
 </article>
 <article>
-<img src="data:image/jpeg;base64,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" alt="Vulnerability story" />
+<img src="https://markmanson.net/wp-content/uploads/2013/08/fights-in-a-toxic-relationship.jpg" alt="Vulnerability story" />
 <div class="info">
 <p><strong>Emma Rodriguez</strong> • June 18, 2025</p>
 <h3>Toxic Relationships</h3>
@@ -73,7 +80,12 @@
 <br>
 <button onclick="addStory()">Post Story</button>
 </div>  
-<h1 id="book">Book an Appointment</h1>
+<h1  id="book" style="
+font-size: 2rem;
+color:#2e7d32;;
+margin-bottom: 20px;
+text-align: center;
+">Book an Appointment</h1>
 <div class="booking-layout">
 <div class="calendar-box">
 <label for="appointmentDate">📅 Select Date:</label>
@@ -85,21 +97,19 @@
 <div>
 <h2>Dr. Rebecca Martinez, Ph.D</h2>
 <p>Clinical Psychologist – Anxiety, Depression, Trauma</p>
-<p><strong>$150/hour</strong></p>
+<p><strong>free</strong></p>
 <button class="book-btn" onclick="bookWithGoogle('Dr. Rebecca Martinez')">Book Now</button>
 </div>
 </div>
 <div class="therapist">
-<img src="https://media.istockphoto.com/id/1410538853/photo/young-man-in-the-public-park.jpg?s=612x612&w=0&k=20&c=EtRJGnNOFPJ2HniBSLWKzsL9Xf7GHinHd5y2Tx3da0E=" alt="Dr. Jonathan Lee" />
-<footer>
-<p>&copy; 2025 MindfulTalk. All rights reserved.to.com/id/1410538853/photo/young-man-in-the-public-park.jpg?s=612x612&w=0&k=20&c=EtRJGnNOFPJ2HniBSLWKzsL9Xf7GHinHd5y2Tx3da0E=" alt="Dr. Jonathan Lee" />
-<div>
-<h2>Dr. Jonathan Lee, Psy.D</h2>
-<p>Cognitive Behavioral Therapist – OCD, Phobias, Stress</p>
-<p><strong>$165/hour</strong></p>
-<button class="book-btn" onclick="bookWithGoogle('Dr. Jonathan Lee')">Book Now</button>
-</div>
-</div>
+  <img src="https://img.freepik.com/free-photo/african-medical-doctor-man-isolated-white-background_93675-128521.jpg?semt=ais_hybrid&w=740" alt="Dr. Rebecca Martinez" />
+  <div>
+  <h2>Dr. Mj</h2>
+  <p>Clinical Psychologist – Anxiety, Depression, Trauma</p>
+  <p><strong>free</strong></p>
+  <button class="book-btn" onclick="bookWithGoogle('Dr. Rebecca Martinez')">Book Now</button>
+  </div>
+  </div>
 </div>
 </div>
 <br>
@@ -120,7 +130,7 @@
 <div style="overflow:hidden;max-width:100%;width:1300px;height:400px;"><div id="google-maps-canvas" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=nirobi&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="embedded-map-code" href="https://www.bootstrapskins.com/themes" id="grab-map-info">premium bootstrap themes</a><style>#google-maps-canvas img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}</style></div>
 </div>
 </div>   
-<div class="help">
+<div id="help" class="help">
 <h2>🆘 How We Can Help</h2>
 <p>We care about your well-being. Here are ways we can support you:</p>
 <ul>
@@ -157,13 +167,7 @@
 </section>   
 </main>
 <footer>
-<nav>
-<a href="#">🏠 Home</a>
-<a href="#featured">📝 Blogs</a>
-      <a href="#mental">🏢 Facilities</a>
-      <a href="#book">📅 Appointments</a>
-      <a href="#help">❓ Help</a>
-    </nav>
+    <p>&copy; 2025 Mental Health Services. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
@@ -196,5 +200,4 @@ document.getElementById("imageInput").value = "";
 }
   </script>
 </body>
-</html> 
-
+</html>

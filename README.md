@@ -6,6 +6,7 @@
 * JavaScript
 * Html
 * Google Map
+*AI
 ### FUNCTIONS OF MENTAL HEALTH WEBSITE.
 *Mental Health Website was created to spread Mental awarness and help people who are struggle with mental health.
 *On the website you are able to share your exprience and encourage other people who are struggling with the same problem.
