@@ -1,19 +1,20 @@
 # MENTAL HEALTH
-<img src="./4.png" alt="">
+<img src="./ment.png" alt="">
+<img src="https://img.shields.io/endpoint?url=https%3A%2F%2Faward.athena.hackclub.com%2Fapi%2Fbadge">
 
 ## TECHNOLOGIES USED.
 * Css
 * JavaScript
 * Html
 * Google Map
-*AI
+* AI
 ### FUNCTIONS OF MENTAL HEALTH WEBSITE.
 *Mental Health Website was created to spread Mental awarness and help people who are struggle with mental health.
 *On the website you are able to share your exprience and encourage other people who are struggling with the same problem.
 *If your struggling with a certain problem like Depression,Anxiety,Trauma e.t.c ,your able to find stories shared by other people on the same topic.
 *Mental health website has a section called facilities, this is where you are able to get a map of your area and get see a nearby health center that can help you.
 *the website also allows you to book appointments for visiting the facilities.
-*You may know of a facility by you need argent help,that is why i thought it was important to have helplines on the website that hundle different situation like a help line specificaly for substance abuse but that is one of many that are on the app including a national Suicide Lifeline emergency number.Considering the rising number of suicide rate in the world.
+*You may know of a facility by you need argent help,that is why i thought it was important to have helplines on the website that hundle different situation like a help line specificaly for substance abuse but that is one of many that are on the app including a crisis support emergency number.Considering the rising number of suicide rate in the world.
 
 #### REASONS FOR CREATING A MEANTAL HEALTH WEBSITE.
 *I have a friend who is struggling with depression and does not know how to overcome it.
